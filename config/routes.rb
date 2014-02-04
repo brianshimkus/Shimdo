@@ -1,5 +1,7 @@
 Shimdo::Application.routes.draw do
-  resources :todos
+  resources :todos do
+    resources :todo_items
+  end
   root 'todos#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
