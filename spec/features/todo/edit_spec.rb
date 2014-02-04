@@ -3,6 +3,17 @@ require 'spec_helper'
 describe "Editing todo" do
 	let!(:todo) { Todo.create(title: "Groceries", description: "Grocery list.") }
 
+	it "is successful when clicking the destroy link" do
+		visit "/todo"
+
+		within "#todo_#{todo.id}" do
+			click_link "Destroy"
+		end
+		expect(page).to_not have_content(todo.title)
+		expect(Todo.count).to eq(0)
+	end
+end
+
 
 	def update_todo(options={})
 		options[:title] ||= "My todo list"
