@@ -1,1 +1,3 @@
-shimdo - my todo app developed using Rails 4. 
+## shimdo
+
+My todo app developed using Rails 4. 
