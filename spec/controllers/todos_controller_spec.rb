@@ -34,7 +34,7 @@ describe TodosController do
     it "assigns all todos as @todos" do
       todo = Todo.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:todos).should eq([todo])
+      assigns(:todos).should eq(todo)
     end
   end
 
