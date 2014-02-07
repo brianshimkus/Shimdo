@@ -1,15 +1,14 @@
 class TodoItemsController < ApplicationController
+  before_action :find_todo
+  
   def index
-  	@todo = Todo.find(params[:todo_id])
   end
 
   def new
-  	@todo = Todo.find(params[:todo_id])
   	@todo_item = @todo.todo_items.new
   end
 
   def create
-  	@todo = Todo.find(params[:todo_id])
   	@todo_item = @todo.todo_items.new(todo_item_params)
   	if @todo_item.save
   		flash[:success] = "Added todo list item."
@@ -21,12 +20,10 @@ class TodoItemsController < ApplicationController
   end
 
   def edit
-    @todo = Todo.find(params[:todo_id])
     @todo_item = @todo.todo_items.find(params[:id])
   end
 
   def update
-    @todo = Todo.find(params[:todo_id])
     @todo_item = @todo.todo_items.find(params[:id])
     if @todo_item.update_attributes(todo_item_params)
       flash[:success] = "Saved todo list item."
@@ -39,6 +36,11 @@ class TodoItemsController < ApplicationController
 
   def url_options
     { todo_id: params[:todo_id] }.merge(super)
+  end
+
+  private
+  def find_todo
+    @todo = Todo.find(params[:todo_id])
   end
 
   private
