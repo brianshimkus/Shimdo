@@ -34,6 +34,16 @@ class TodoItemsController < ApplicationController
     end
   end
 
+  def destroy
+    @todo_item = @todo.todo_items.find(params[:id])
+    if @todo_item.destroy
+      flash[:success] = "Todo list item was deleted."
+    else
+      flash[:error] = "Todo list item could not be deleted."
+    end
+    redirect_to todo_todo_items_path
+  end
+
   def url_options
     { todo_id: params[:todo_id] }.merge(super)
   end
