@@ -1,0 +1,16 @@
+%html
+  %head
+    %title Shimdo
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    .nav
+      %h1= link_to "Todo", root_path
+      %ul
+        %li= link_to "Todo Lists", todos_path
+      %br.clear/
+    - flash.each do |type, message|
+      %div{class: "alert flash #{type}"}
+        = message
+    = yield

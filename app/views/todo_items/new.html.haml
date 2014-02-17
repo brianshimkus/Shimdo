@@ -1,0 +1,5 @@
+%h1
+  = @todo.title
+  \- Add Todo List Item
+= form_for [@todo, @todo_item] do |form|
+  = render partial: form
