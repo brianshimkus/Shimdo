@@ -11,21 +11,33 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 h3 {
+  font-size: 32px;
+}
+
+input,
+textarea {
+  background-color: #243d58;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
   font-size: 20px;
+  padding-left: 20px;
+  width: 300px;
+  height: 40px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 16px;
 }
 
 pre {

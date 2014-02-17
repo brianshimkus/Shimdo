@@ -25,6 +25,9 @@ div.flash.notice { border: 2px solid blue; color: blue; }
 }
 
 .nav {
-  color: #fff;
   margin-top: 50px;
+}
+
+.nav.main-title h1 {
+  color: red;
 }
