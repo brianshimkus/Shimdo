@@ -1,16 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
 body {
   background-color: #cbdcf0;
-  color: #90a9d2;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  margin-left: 15%;
+  color: #243d58;
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 10px;
 }
 
 pre {
@@ -26,7 +41,6 @@ a {
   }
   &:hover {
     color: #fff;
-    background-color: #000;
   }
 }
 

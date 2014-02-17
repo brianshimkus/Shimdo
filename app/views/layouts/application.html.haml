@@ -6,9 +6,7 @@
     = csrf_meta_tags
   %body
     .nav
-      %h1= link_to "Todo", root_path
-      %ul
-        %li= link_to "Todo Lists", todos_path
+      %h1.main-title= link_to "Shimdo", root_path
       %br.clear/
     - flash.each do |type, message|
       %div{class: "alert flash #{type}"}
