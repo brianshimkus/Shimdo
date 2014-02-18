@@ -27,10 +27,15 @@ textarea {
   background-color: #2b303b;
   border: 1px solid #fff;
   border-radius: 4px;
-  color: #90A9D2;
-  font-size: 20px;
-  padding-left: 10px;
+  color: #9db88a;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 0 10px 10px;
   width: 300px;
+}
+
+.field {
+  margin-bottom: 15px;
 }
 
 .todo-items {
@@ -40,7 +45,7 @@ textarea {
 }
 
 p, ol, ul {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 18px;
   line-height: 16px;
 }

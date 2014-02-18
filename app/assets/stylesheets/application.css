@@ -16,9 +16,9 @@ div.alert {
 	padding: 10px;
 }
 
-div.flash.success { border: 2px solid #fff; border-radius: 4px; color: #9DB88A; width: 50%; }
-div.flash.error { border: 2px solid #fff; border-radius: 4px; color: #9f4440; width: 50%;}
-div.flash.notice { border: 2px solid #fff; border-radius: 4px; color: #90A9D2; width: 50%;}
+div.flash.success { border: 1px solid #fff; border-radius: 4px; color: #ad5944; width: 50%; }
+div.flash.error { border: 1px solid #fff; border-radius: 4px; color: #ad5944; width: 50%;}
+div.flash.notice { border: 1px solid #fff; border-radius: 4px; color: #ad5944; width: 50%;}
 
 .todo {
   width: 80%;

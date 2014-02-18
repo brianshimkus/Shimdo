@@ -8,12 +8,17 @@
         - @todo.errors.full_messages.each do |msg|
           %li= msg
   .field
+    %br/
     = f.label :title
     %br/
     = f.text_field :title
+    %br/
+    %br/
   .field
     = f.label :description
     %br/
     = f.text_area :description
+    %br/
+    %br/
   .actions
     = f.submit
