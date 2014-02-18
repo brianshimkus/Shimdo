@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 
 body {
-  background-color: #cbdcf0;
-  color: #243d58;
+  background-color: #2b303b;
+  color: #90A9D2;
   font-family: 'Questrial', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 16px;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 20%;
+  width: 60%;
 }
 
 h1 {
@@ -24,20 +24,30 @@ h3 {
 
 input,
 textarea {
-  background-color: #243d58;
+  background-color: #2b303b;
   border: 1px solid #fff;
   border-radius: 4px;
-  color: #fff;
+  color: #90A9D2;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   width: 300px;
-  height: 40px;
 }
 
-p, ol, ul, td {
+.todo-items {
+  color: #90A9D2;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+p, ol, ul {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
   line-height: 16px;
+}
+
+td {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 pre {
@@ -47,9 +57,10 @@ pre {
 }
 
 a {
-  color: #90a9d2;
+  color: #9db88a;
+  text-decoration: none;
   &:visited {
-    color: #90a9d2;
+    color: #9db88a;
   }
   &:hover {
     color: #fff;
@@ -74,11 +85,12 @@ div {
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 1px solid #fff;
+  border-radius: 4px;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #2b303b;
   h2 {
     text-align: left;
     font-weight: bold;
@@ -86,8 +98,8 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: #2b303b;
+    color: #90A9D2;
   }
   ul li {
     font-size: 12px;

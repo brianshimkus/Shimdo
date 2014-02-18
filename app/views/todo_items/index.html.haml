@@ -1,11 +1,11 @@
-%h1= @todo.title
+%h2= @todo.title
 %table.todo_items
   %table.todo_items
     %thead
-      %tr
-        %th{width: "25%"} Completed?
-        %th{width: "65%"} Content
-        %th{width: "10%"} Functions
+      %tr.todo-items
+        %th{width: "15%"} Completed?
+        %th{width: "30%"} Content
+        %th{width: "40%"} Functions
     %tbody
       - @todo.todo_items.each do |todo_item|
         %tr{id: dom_id(todo_item)}
