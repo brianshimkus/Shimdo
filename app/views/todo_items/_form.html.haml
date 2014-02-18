@@ -1,10 +1,7 @@
-#error_explanation
-  %h2
-    = pluralize(@todo.errors.count, "error")
-    prohibited this todo item from being saved:
-  %ul
-    - @todo_item.errors.full_messages.each do |msg|
-      %li= msg
+%br/
 = form.label :content
+%br/
 = form.text_field :content
+%br/
+%br/
 = form.submit "Save"
