@@ -7,10 +7,10 @@ class Todo < ActiveRecord::Base
 	validates :description, length: { minimum: 5 }
 
 	def has_completed_items?
-		todo_items.complete.size > 0
+		self.todo_items.complete.present?
 	end
 
 	def has_incomplete_items?
-		todo_items.incomplete.size > 0
+		self.todo_items.incomplete.present?
 	end
 end

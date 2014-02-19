@@ -5,7 +5,7 @@ body {
   color: #90A9D2;
   font-family: 'Questrial', sans-serif;
   font-size: 20px;
-  line-height: 16px;
+  line-height: 14px;
   margin-left: 20%;
   width: 60%;
 }
@@ -20,6 +20,10 @@ h2 {
 
 h3 {
   font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 input,
@@ -108,6 +112,6 @@ div {
   }
   ul li {
     font-size: 12px;
-    list-style: square;
+    list-style: none;
   }
 }

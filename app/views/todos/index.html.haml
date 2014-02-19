@@ -4,10 +4,10 @@
     %h3= todo.title
     %p= todo.description
     %ul.functions
-      %li= link_to "List Items", todo_todo_items_path(todo)
-      %li= link_to 'Show', todo
+      %li= link_to "Todo Items", todo_todo_items_path(todo)
+      // %li= link_to 'Show', todo
       %li= link_to 'Edit', edit_todo_path(todo)
-      %li= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' }
+      %li= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure you want to delete this todo list?' }
     %br.clear/
 %br/
 = link_to 'New Todo List', new_todo_path
