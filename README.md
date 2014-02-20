@@ -1,4 +1,4 @@
-# Shimdo
+# [Shimdo](http://shimdo.bluneon.com/) 
 
 My todo app developed using Rails 4. 
 
